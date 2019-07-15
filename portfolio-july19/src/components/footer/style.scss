@@ -1,0 +1,36 @@
+$colors: (
+    lucid-green: #3F835B,
+    jean: #464E66,
+    highlighter: #E6AC52,
+    super-light-gray: #E6E9EA,
+    off-white: #F5F5F5,
+    candy-red: #B42F2B,
+    sole: #A17448
+);
+    
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$queries: (
+    phone: "only screen and (max-width : 425px)",
+    tablet: "only screen and (max-width : 768px)",
+    computer: "only screen and (max-width : 1024px)",
+    4k:  "only screen and (min-width : 1024px)"
+);
+
+@function responsive($query-size) {
+    @return map-get($queries, $query-size);
+}
+
+footer {
+    background: color(highlighter);
+    padding: 2em 3em;
+    display: flex;
+    justify-content: center;
+}
+footer a {
+    color: color(jean);
+    margin: 0 2em;
+    font-size: 2rem;
+}

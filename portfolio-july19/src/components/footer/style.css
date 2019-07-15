@@ -1,0 +1,17 @@
+footer {
+  background: #E6AC52;
+  padding: 2em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer a {
+  color: #464E66;
+  margin: 0 2em;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
