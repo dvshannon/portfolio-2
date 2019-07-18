@@ -21,7 +21,7 @@ function Nav () {
             <a href='https://github.com/dvshannon/' target="_blank" rel='noopener noreferrer'>Github</a>
             <a href='https://www.linkedin.com/in/deyon-shannon-b911a9141/' target="_blank" rel='noopener noreferrer'>LinkedIn</a>
             <span>Deyon Shannon</span>
-            <Link to='/'>Home</Link>
+            <Link to='/landing'>Home</Link>
             <Link to='/aboutme'>About Me</Link>
         </div>
     )
