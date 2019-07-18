@@ -53,6 +53,18 @@ body {
   font-weight: 200;
 }
 
+@media only screen and (min-width: 1441px) {
+  .jumbo-text .lighter-text {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .jumbo-text {
+    font-size: 2em;
+  }
+}
+
 .social-links {
   display: -ms-grid;
   display: grid;
@@ -69,6 +81,12 @@ body {
 @media only screen and (max-width: 768px) {
   .social-links {
     max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .social-links {
+    font-size: 2em;
   }
 }
 
@@ -93,6 +111,12 @@ body {
 @media only screen and (max-width: 425px) {
   .cta {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .cta {
+    padding-bottom: 20px;
   }
 }
 

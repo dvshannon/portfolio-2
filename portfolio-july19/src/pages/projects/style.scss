@@ -26,6 +26,9 @@ $queries: (
 h2 {
     margin: 0 auto !important; 
     text-align: center;
+    @media #{responsive(4k)} {
+        font-size: 2em;
+    }
 }
 .project-grid {
     margin: 0;

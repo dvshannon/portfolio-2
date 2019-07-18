@@ -15,7 +15,7 @@ $queries: (
     phone: "only screen and (max-width : 425px)",
     tablet: "only screen and (max-width : 768px)",
     computer: "only screen and (max-width : 1024px)",
-    4k:  "only screen and (min-width : 1024px)"
+    4k:  "only screen and (min-width : 1441px)"
 );
 
 @function responsive($query-size) {
@@ -33,6 +33,9 @@ $queries: (
         @media #{responsive(tablet)} {
             max-width: 100%;
             padding: 1rem 2rem;
+        }
+        @media #{responsive(4k)} {
+            font-size: 2em;
         }
 }
 #navbar a, #navbar span{

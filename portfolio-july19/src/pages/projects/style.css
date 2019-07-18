@@ -3,6 +3,12 @@ h2 {
   text-align: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
 .project-grid {
   margin: 0;
   width: 50vw;

@@ -17,6 +17,12 @@
   }
 }
 
+@media only screen and (min-width: 1441px) {
+  #navbar {
+    font-size: 2em;
+  }
+}
+
 #navbar a, #navbar span {
   background-color: #3F835B;
   color: #F5F5F5;

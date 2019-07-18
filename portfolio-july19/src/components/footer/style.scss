@@ -16,7 +16,7 @@ $queries: (
     phone: "only screen and (max-width : 425px)",
     tablet: "only screen and (max-width : 768px)",
     computer: "only screen and (max-width : 1024px)",
-    4k:  "only screen and (min-width : 1024px)"
+    4k:  "only screen and (min-width : 1441px)"
 );
 
 @function responsive($query-size) {
@@ -28,6 +28,9 @@ footer {
     padding: 2em 3em;
     display: flex;
     justify-content: center;
+    @media #{responsive(4k)} {
+        font-size: 2em;
+    }
 }
 
 footer a {
