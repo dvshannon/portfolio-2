@@ -1,0 +1,81 @@
+$colors: (
+    lucid-green: #3F835B,
+    jean: #464E66,
+    highlighter: #E6AC52,
+    super-light-gray: #E6E9EA,
+    off-white: #F5F5F5,
+    candy-red: #B42F2B,
+    sole: #A17448
+);
+    
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+$queries: (
+    phone: "only screen and (max-width : 425px)",
+    tablet: "only screen and (max-width : 768px)",
+    computer: "only screen and (max-width : 1024px)",
+    4k:  "only screen and (min-width : 1441px)"
+);
+
+@function responsive($query-size) {
+    @return map-get($queries, $query-size);
+}
+
+.aboutme {
+    margin: 0 auto;
+    height: 80vh;
+    padding-top: 30px;
+    text-align: center;
+    color: color(jean);
+    display: grid;
+    grid-template-rows: 100px 200px;
+    @media #{responsive(phone)} {
+        grid-template-rows: 100px 750px;
+    }
+    @media #{responsive(tablet)} {
+        grid-template-rows: 100px 350px;
+    }
+    #bg3 {
+        clip-path: polygon(9% 35%, 0% 100%, 100% 100%);
+        background-color: color(lucid-green);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        display: block;
+    }
+
+    #bg4{
+        clip-path: polygon(14% 58%, 0% 100%, 100% 100%);
+        background-color: color(jean);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        display: block;
+    }
+}
+
+.aboutme-header {
+    margin: 0 13vw;
+    border: .5px solid color(candy-red);
+    border-radius: 3px;
+}
+
+.aboutme-content {
+    padding: 15px 20px;
+    background: color(super-light-gray);
+    max-width: 100%;
+    margin: 3vh 13vw;
+    border: .5px solid color(candy-red);
+    border-radius: 3px;
+    line-height: 1.7em;
+    font-size: 1.5rem;
+    @media #{responsive(phone)} {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+}
