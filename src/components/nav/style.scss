@@ -1,0 +1,62 @@
+$colors: (
+    lucid-green: #3F835B,
+    jean: #464E66,
+    highlighter: #E6AC52,
+    super-light-gray: #E6E9EA,
+    off-white: #F5F5F5,
+    candy-red: #B42F2B,
+    sole: #A17448
+);
+    
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+$queries: (
+    phone: "only screen and (max-width : 425px)",
+    tablet: "only screen and (max-width : 768px)",
+    computer: "only screen and (max-width : 1024px)",
+    4k:  "only screen and (min-width : 1441px)"
+);
+
+@function responsive($query-size) {
+    @return map-get($queries, $query-size);
+}
+
+#navbar {
+    padding: 1.5em 3em;
+    text-align: center;
+    background-color: color(lucid-green);
+    position: sticky;
+    top: 0;
+    transition: top 0.8s;
+    z-index: 1;
+        @media #{responsive(tablet)} {
+            max-width: 100%;
+            padding: 1rem 2rem;
+        }
+        @media #{responsive(4k)} {
+            font-size: 2em;
+        }
+}
+#navbar a, #navbar span{
+    background-color: color(lucid-green);
+    color: color(off-white);
+    text-decoration: none;
+    margin: 0 3em;
+        @media #{responsive(tablet)} {
+            max-width: 100%;
+            display: flex;
+            margin: 0 5px;
+            justify-content: baseline;
+        }
+}
+
+#navbar a:hover {
+    border-bottom: solid 4px color(candy-red);
+    padding: 5px 0;
+    transition: 300ms;
+}
+#navbar span {
+    font-weight: 800px;
+    font-size: 1.7rem;
+}

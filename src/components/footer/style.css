@@ -1,0 +1,30 @@
+footer {
+  background: #E6AC52;
+  padding: 2em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 1441px) {
+  footer {
+    font-size: 2em;
+  }
+}
+
+footer a {
+  color: #464E66;
+  margin: 0 2em;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  footer a {
+    display: block;
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

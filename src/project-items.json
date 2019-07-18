@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Remember The Throne",
+        "description": "Remember The Throne is a memory game that requires you to click on the characters in the show. Be weary of clicking on the same character or else you wil know nothing!",
+        "toolsUsed": ["React","ES6", "JSON", "Sweet Alert"],
+        "image": ""
+    },
+    {
+        "id": 2,
+        "name": "The Liri Bot",
+        "description": "The Liri bot allows users to search through a number of artist, songs, movies, and more to find out more details. This app is a mimmick of Siri but with text.",
+        "toolsUsed": ["NodeJS", "ExpressJS", "Axios", "MomentJS", "File System Manipulation", "JavaScript"],
+        "image": "https://streamable.com/e232r"
+    },
+    {
+        "id": 3,
+        "name": "TrickMember",
+        "description": "Trickmember is an app that provides a simple input system to help skaters remember what tricks they have done.",
+        "toolsUsed": ["JavaScript", "jQuery", "HTML5", "CSS3"],
+        "image": ""
+    },
+    {
+        "id": 4,
+        "name": "Bamazon",
+        "description": "Bamazon is a back end application that mimmicks the Amazon app. It currently allows users to search through available items and purchase them if they are in stock. It also allows managers to order new products, restock items, and check items with low stock.",
+        "toolsUsed": ["JavaScript", "MySql", "Inquirer"],
+        "image": "https://streamable.com/f4xy6"
+    },
+    {
+        "id": 5,
+        "name": "Crystal Collector Game",
+        "description": "This game brings a challenge to the user by forcing random numbers onto crystal values. The user is then to decipher how to reach the target score that can be found at the top of the container and not go over the target value.",
+        "toolsUsed": ["JavaScript", "jQuery", "HTML5", "CSS3"],
+        "image": ""
+    }
+]
