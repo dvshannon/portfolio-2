@@ -56,6 +56,9 @@ body {
             display: block;
         }
         overflow: hidden;
+        @media #{responsive(tablet)} {
+            height: 83vh;
+        }
 }
 .jumbo-text{
     float: right;
@@ -73,12 +76,24 @@ body {
     margin-top: 5vh;
     font-size: 1.3em;
     width: 375px;
+    @media #{responsive(tablet)} {
+        max-width: 100%;
+    }
 }
 .cta {
     position: absolute;
     bottom: 5vh; left: 0; right: 0;
     z-index: -1;
     color: color(off-white);
+        @media #{responsive(tablet)} {
+            color: color(off-white);
+            font-weight: 600;
+            bottom: 0;
+            text-shadow: 0 4px 5px color(jean);
+        }
+        @media #{responsive(phone)} {
+            display: none;
+        }
 }
 .social-links a {
     color: color(jean);
@@ -88,6 +103,11 @@ body {
     border-top: 1px solid color(jean);
     border-radius: 3px;
     font-weight: 500;
+    @media #{responsive(tablet)} {
+        background-color: color(lucid-green);
+        color: color(off-white);
+        opacity: 0.975;
+    }
 }
 
 .social-links a:hover {
@@ -102,6 +122,9 @@ body {
     border-radius: 3px;
     color: color(off-white);
     display: grid;
+        @media #{responsive(tablet)} {
+            max-width: 100%;
+        }
 }
 .fa-github:hover, .fa-linkedin:hover, .fa-file:hover {
     color: color(off-white);

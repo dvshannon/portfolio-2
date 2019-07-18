@@ -11,7 +11,7 @@ function Nav () {
             document.getElementById('navbar').style.top = '0';
             document.getElementById('navbar').style.opacity = '1';
         } else {
-            document.getElementById('navbar').style.top = '-100px';
+            document.getElementById('navbar').style.top = '-200px';
             document.getElementById('navbar').style.opacity = '0.6';
         }
         prevScrollPos = currentScrollPos;

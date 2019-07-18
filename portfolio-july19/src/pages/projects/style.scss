@@ -32,10 +32,19 @@ h2 {
     width: 50vw;
     padding: 1.7em;
     margin-left: 350px;
+    @media #{responsive(tablet)} {
+        margin: 0%;
+        display: grid;
+        padding: .5rem;
+        width: 90%;
+    }
 }
 
 .project-item img {
     width: 100%;
+    @media #{responsive(tablet)} {
+        width: 100%;
+    }
 }
 
 .project-item a {
@@ -49,6 +58,13 @@ h2 {
     border: 2px solid color(off-white);
     width: 100px;
     border-radius: 3px;
+    @media #{responsive(tablet)} {
+        width: 100%;
+    }
+}
+.project-item {
+    margin: 0;
+    text-align: center;
 }
 .project-item a:hover {
     color: color(jean);

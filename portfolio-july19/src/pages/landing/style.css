@@ -37,6 +37,12 @@ body {
   display: block;
 }
 
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    height: 83vh;
+  }
+}
+
 .jumbo-text {
   float: right;
   padding: 0 2em;
@@ -60,6 +66,12 @@ body {
   width: 375px;
 }
 
+@media only screen and (max-width: 768px) {
+  .social-links {
+    max-width: 100%;
+  }
+}
+
 .cta {
   position: absolute;
   bottom: 5vh;
@@ -67,6 +79,21 @@ body {
   right: 0;
   z-index: -1;
   color: #F5F5F5;
+}
+
+@media only screen and (max-width: 768px) {
+  .cta {
+    color: #F5F5F5;
+    font-weight: 600;
+    bottom: 0;
+    text-shadow: 0 4px 5px #464E66;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .cta {
+    display: none;
+  }
 }
 
 .social-links a {
@@ -77,6 +104,14 @@ body {
   border-top: 1px solid #464E66;
   border-radius: 3px;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .social-links a {
+    background-color: #3F835B;
+    color: #F5F5F5;
+    opacity: 0.975;
+  }
 }
 
 .social-links a:hover {
@@ -93,6 +128,12 @@ body {
   color: #F5F5F5;
   display: -ms-grid;
   display: grid;
+}
+
+@media only screen and (max-width: 768px) {
+  .project-container {
+    max-width: 100%;
+  }
 }
 
 .fa-github:hover, .fa-linkedin:hover, .fa-file:hover {

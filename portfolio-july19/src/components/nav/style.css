@@ -10,11 +10,31 @@
   z-index: 1;
 }
 
+@media only screen and (max-width: 768px) {
+  #navbar {
+    max-width: 100%;
+    padding: 1rem 2rem;
+  }
+}
+
 #navbar a, #navbar span {
   background-color: #3F835B;
   color: #F5F5F5;
   text-decoration: none;
   margin: 0 3em;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar a, #navbar span {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 5px;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
 }
 
 #navbar a:hover {
