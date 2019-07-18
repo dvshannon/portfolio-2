@@ -14,7 +14,7 @@ $colors: (
 $queries: (
     phone: "only screen and (max-width : 425px)",
     tablet: "only screen and (max-width : 768px)",
-    computer: "only screen and (max-width : 1024px)",
+    computer: "only screen and (max-width : 1025px)",
     4k:  "only screen and (min-width : 1441px)"
 );
 
@@ -37,6 +37,12 @@ $queries: (
         @media #{responsive(4k)} {
             font-size: 2em;
         }
+        @media #{responsive(computer)} {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            font-size: 1em;
+            padding: 1em 1.5em;
+        }
 }
 #navbar a, #navbar span{
     background-color: color(lucid-green);
@@ -49,6 +55,7 @@ $queries: (
             margin: 0 5px;
             justify-content: baseline;
         }
+        
 }
 
 #navbar a:hover {

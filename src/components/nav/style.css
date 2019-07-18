@@ -23,6 +23,17 @@
   }
 }
 
+@media only screen and (max-width: 1025px) {
+  #navbar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+    font-size: 1em;
+    padding: 1em 1.5em;
+  }
+}
+
 #navbar a, #navbar span {
   background-color: #3F835B;
   color: #F5F5F5;
