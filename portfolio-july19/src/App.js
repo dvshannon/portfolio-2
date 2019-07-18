@@ -3,13 +3,12 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from './pages/landing/Landing';
 import AboutMe from './pages/aboutme/AboutMe';
-import Nav from  './components/nav/Nav';
+// import Nav from  './components/nav/Nav';
 
 
 function App() {
   return (
       <Router>
-        <Nav />
           {/* <div className="landing"> */}
           <Switch>
             <Route exact path='/' component={Landing} />
