@@ -4,7 +4,6 @@ import ProjectItems from '../../components/projectItems/ProjectItems';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 class Projects extends React.Component {
-// will add animated fade in soon
     render() {
         return (
             <div className="project-container">

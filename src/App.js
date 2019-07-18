@@ -8,7 +8,7 @@ import Nav from  './components/nav/Nav';
 
 function App() {
   return (
-      <Router>
+      <Router basename='portfolio-2'>
         <Nav />
           <div className="landing">
           <Switch>
