@@ -4,6 +4,7 @@ import CrystalGame from '../../../src/img/crystal-collector.png';
 import TrickMember from '../../../src/img/trickmember.png';
 import onBoard from '../../../src/img/onBoard.png';
 import Index from '../../../src/img/indexBookSearch.png';
+import PlayDate from '../../../src/img/playDate.png';
 import './style.css';
 import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -11,13 +12,23 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function ProjectItems() {
     return (
     <div className="project-grid">
-        <ScrollAnimation animateIn='slideInLeft'>
+        <ScrollAnimation animateIn='slideInRight'>
             <div className="project-item">
                 <h3>Index takes in the users input and finds a book based off of their search. Users can save their searches simply by pressing the save button next to the book they choose.</h3>
                 <img src={Index} alt='Index'/>
                 <div className="project-buttons">
                     <a href="https://github.com/dvshannon/index" target='_blank' rel='noopener noreferrer'>View Code</a>
                     <a href="https://index-spa.herokuapp.com/" target='_blank' rel='noopener noreferrer'>Demo</a>
+                </div>
+            </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn='slideInLeft'>
+            <div className="project-item">
+                <h3>PlayDate give users the opportunity to meet other people and their dogs! This app can be used as a simple way to meet new friends or look for dates. </h3>
+                <img src={PlayDate} alt="PlayDate"/>
+                <div className="project-buttons">
+                    <a href="https://github.com/bryvl/project-2" target='_blank' rel='noopener noreferrer'>View Code</a>
+                    <a href="https://gentle-forest-99048.herokuapp.com/#/" target='_blank' rel='noopener noreferrer'>Demo</a>
                 </div>
             </div>
         </ScrollAnimation>
