@@ -13,6 +13,7 @@ function App() {
           <Nav />
           <Switch>
             <Route exact path='/' component={Landing} />
+            <Route exact path='/landing' component={Landing} />
             <Route path='/aboutme' component={AboutMe} />
           </Switch>
           </div>
