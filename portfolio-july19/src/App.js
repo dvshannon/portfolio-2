@@ -11,10 +11,10 @@ function App() {
       <Router>
         <div>
           <Nav />
-          {/* <Switch> */}
+          <Switch>
             <Route exact path='/' component={Landing} />
             <Route exact path='/aboutme' component={AboutMe} />
-          {/* </Switch> */}
+          </Switch>
           </div>
       </Router>
   );
