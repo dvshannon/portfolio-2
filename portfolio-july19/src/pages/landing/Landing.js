@@ -2,13 +2,11 @@ import React from 'react';
 import Projects from '../../pages/projects/Projects';
 import Footer from '../../components/footer/Footer';
 import './style.css';
-import Nav from '../../components/nav/Nav';
 
 
 function Landing() {
     return (
         <div className="landing">
-            <Nav />
             <div className="jumbotron">
             <div className="jumbo-text">
                 <h1>Deyon Shannon</h1>
