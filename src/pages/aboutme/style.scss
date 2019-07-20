@@ -13,9 +13,9 @@ $colors: (
 }
 $queries: (
     phone: "only screen and (max-width : 425px)",
-    tablet: "only screen and (max-width : 768px)",
-    computer: "only screen and (max-width : 1024px)",
-    4k:  "only screen and (min-width : 1441px)"
+    tablet: "only screen and (max-width : 1023px)",
+    computer: "only screen and (min-width : 1024px)",
+    4k:  "only screen and (min-width : 1267px)"
 );
 
 @function responsive($query-size) {
@@ -74,7 +74,7 @@ $queries: (
     border-radius: 3px;
     line-height: 1.7em;
     font-size: 1.5rem;
-    @media #{responsive(phone)} {
+    @media #{responsive(phone, computer)} {
         font-size: 1.2rem;
         line-height: 1.3rem;
     }

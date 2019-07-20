@@ -10,7 +10,6 @@ function AboutMe() {
                 <h1>About Me</h1>
             </div>
             <div className="aboutme-content">
-                <img src="" alt=""/>
                 My name is Deyon Shannon and I am a software developer from Raleigh, NC who enjoys creating products that people love. Getting involved in the tech world has always been a dream of mine  and to know that there is so much more to learn is beyond exciting. 
             </div>
         </div>

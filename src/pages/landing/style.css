@@ -37,9 +37,15 @@ body {
   display: block;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .jumbotron {
     height: 83vh;
+  }
+}
+
+@media only screen and (min-width: 1267px) {
+  .jumbotron {
+    height: 92vh;
   }
 }
 
@@ -53,15 +59,21 @@ body {
   font-weight: 200;
 }
 
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1267px) {
   .jumbo-text .lighter-text {
     font-size: 2em;
   }
 }
 
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1267px) {
   .jumbo-text {
     font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .jumbo-text {
+    font-size: 1em;
   }
 }
 
@@ -78,15 +90,30 @@ body {
   width: 375px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .social-links {
     max-width: 100%;
   }
 }
 
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1267px) {
   .social-links {
     font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .social-links {
+    -ms-grid-rows: 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .social-links {
+    position: absolute;
+    margin-top: 275px;
   }
 }
 
@@ -99,12 +126,10 @@ body {
   color: #F5F5F5;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .cta {
     color: #F5F5F5;
-    font-weight: 600;
-    bottom: 0;
-    text-shadow: 0 4px 5px #464E66;
+    left: 350px;
   }
 }
 
@@ -114,9 +139,15 @@ body {
   }
 }
 
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1267px) {
   .cta {
     padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cta {
+    font-size: 1.7rem;
   }
 }
 
@@ -130,7 +161,7 @@ body {
   font-weight: 500;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .social-links a {
     background-color: #3F835B;
     color: #F5F5F5;
@@ -154,9 +185,21 @@ body {
   display: grid;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .project-container {
     max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .project-container {
+    padding: 8em 0 2em 0.75em;
+  }
+}
+
+@media only screen and (min-width: 1267px) {
+  .project-container {
+    padding: 8em 0 2em 13.5em;
   }
 }
 

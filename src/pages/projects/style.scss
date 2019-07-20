@@ -15,8 +15,8 @@ $colors: (
 $queries: (
     phone: "only screen and (max-width : 425px)",
     tablet: "only screen and (max-width : 768px)",
-    computer: "only screen and (max-width : 1024px)",
-    4k:  "only screen and (min-width : 1024px)"
+    computer: "only screen and (min-width : 1024px)",
+    4k:  "only screen and (min-width : 1267px)"
 );
 
 @function responsive($query-size) {
@@ -28,15 +28,18 @@ h2 {
     text-align: center;
     @media #{responsive(4k)} {
         font-size: 2em;
+        padding: 0;
+        text-align: left;
     }
 }
 .project-grid {
     margin: 0;
     width: 50vw;
     padding: 1.7em;
-    margin-left: 350px;
+    margin-left: 70px;
     @media #{responsive(tablet)} {
         margin: 0%;
+        margin-left: 30px;
         display: grid;
         padding: .5rem;
         width: 90%;

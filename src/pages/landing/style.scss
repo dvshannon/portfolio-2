@@ -14,9 +14,9 @@ $colors: (
 
 $queries: (
     phone: "only screen and (max-width : 425px)",
-    tablet: "only screen and (max-width : 768px)",
-    computer: "only screen and (max-width : 1024px)",
-    4k:  "only screen and (min-width : 1441px)"
+    tablet: "only screen and (max-width : 1023px)",
+    computer: "only screen and (min-width : 1024px)",
+    4k:  "only screen and (min-width : 1267px)"
 );
 
 @function responsive($query-size) {
@@ -59,6 +59,9 @@ body {
         @media #{responsive(tablet)} {
             height: 83vh;
         }
+        @media #{responsive(4k)} {
+            height: 92vh;
+        }
 }
 .jumbo-text{
     float: right;
@@ -72,6 +75,9 @@ body {
         }
         @media #{responsive(4k)} {
             font-size: 2em;
+        }
+        @media #{responsive(computer)} {
+            font-size: 1em;
         }
 }
 .social-links {
@@ -88,6 +94,14 @@ body {
     @media #{responsive(4k)} {
         font-size: 2em;
     }
+    @media #{responsive(computer)} {
+        grid-template-rows: 150px 150px 150px;
+        font-size: 1.7rem;
+    }
+    @media #{responsive(phone)} {
+        position: absolute;
+        margin-top: 275px;
+    }
 }
 .cta {
     position: absolute;
@@ -96,15 +110,16 @@ body {
     color: color(off-white);
         @media #{responsive(tablet)} {
             color: color(off-white);
-            font-weight: 600;
-            bottom: 0;
-            text-shadow: 0 4px 5px color(jean);
+            left: 350px;
         }
         @media #{responsive(phone)} {
             display: none;
         }
         @media #{responsive(4k)} {
             padding-bottom: 20px;
+        }
+        @media #{responsive(computer)} {
+            font-size: 1.7rem;
         }
 }
 .social-links a {
@@ -137,7 +152,13 @@ body {
         @media #{responsive(tablet)} {
             max-width: 100%;
         }
-}
+        @media #{responsive(phone)} {
+            padding: 8em 0 2em 0.75em;
+        }
+        @media #{responsive(4k)} {
+            padding: 8em 0 2em 13.5em;
+        }
+    }
 .fa-github:hover, .fa-linkedin:hover, .fa-file:hover {
     color: color(off-white);
     transition: 300ms;

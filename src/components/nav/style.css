@@ -10,20 +10,20 @@
   z-index: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   #navbar {
     max-width: 100%;
     padding: 1rem 2rem;
   }
 }
 
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1140px) {
   #navbar {
     font-size: 2em;
   }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   #navbar {
     display: -ms-grid;
     display: grid;
@@ -41,7 +41,7 @@
   margin: 0 3em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   #navbar a, #navbar span {
     max-width: 100%;
     display: -webkit-box;
